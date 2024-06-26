@@ -1,0 +1,17 @@
+# Directories
+build
+venv
+.idea
+__pycache__
+.DS_Store
+dist
+_build
+
+cmake-build-*
+xml
+
+# Files
+*.db
+MANIFEST
+*.h5
+*.xdmf
