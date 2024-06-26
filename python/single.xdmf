@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Xdmf Version="3.0">
+	<Domain>
+		<Grid GridType="Collection" CollectionType="Temporal">
+			<Grid Name="m" GridType="Uniform">
+				<Topology TopologyType="Tetrahedron" NumberOfElements="10919" NodesPerElement="4">
+					<DataItem Format="HDF" DataType="Int" Precision="8" Dimensions="10919 4">single.mmf:/mesh/elements</DataItem>
+				</Topology>
+				<Geometry GeometryType="XYZ">
+					<DataItem Format="HDF" DataType="Float" Precision="8" Dimensions="2137 3">single.mmf:/mesh/vertices</DataItem>
+				</Geometry>
+				<Attribute Name="sid" AttributeType="Scalar" Center="Cell">
+					<DataItem Format="HDF" DataType="Int" Precision="8" Dimensions="10919">single.mmf:/mesh/submesh</DataItem>
+				</Attribute>
+				<Time Value="0"/>
+				<Attribute Name="m" AttributeType="Vector" Center="Node">
+					<DataItem Format="HDF" DataType="Float" Precision="8" Dimensions="2137 3">single.mmf:/fields/field0/vectors</DataItem>
+				</Attribute>
+			</Grid>
+		</Grid>
+	</Domain>
+</Xdmf>
+
